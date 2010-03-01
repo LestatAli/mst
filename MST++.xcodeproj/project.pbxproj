@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C12FA1511399DE30007DF88 /* Edge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C12FA1411399DE30007DF88 /* Edge.cpp */; };
+		6C682930113B0D6D008DA298 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C68292F113B0D6D008DA298 /* Heap.cpp */; };
+		6C9FEFB511379DD4004675BA /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FEFB411379DD4004675BA /* Node.cpp */; };
+		6C9FEFBA11379DE8004675BA /* DisjointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FEFB911379DE8004675BA /* DisjointSet.cpp */; };
+		6C9FEFBF11379DF3004675BA /* DisjointSetCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FEFBE11379DF3004675BA /* DisjointSetCollection.cpp */; };
+		6CA46F0A1134F24A00A95229 /* point3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CA46F091134F24A00A95229 /* point3d.cpp */; };
+		6CA46F411134F5A800A95229 /* point4d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CA46F401134F5A800A95229 /* point4d.cpp */; };
+		6CA470B011350A3900A95229 /* simplegraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CA470AF11350A3900A95229 /* simplegraph.cpp */; };
+		6CD592C81134C2D5003F8ECC /* polygraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CD592C51134C2D5003F8ECC /* polygraph.cpp */; };
+		6CD592C91134C2D5003F8ECC /* quickmath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CD592C61134C2D5003F8ECC /* quickmath.cpp */; };
+		6CD592CA1134C2D5003F8ECC /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CD592C71134C2D5003F8ECC /* point.cpp */; };
+		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DD76F6A0486A84900D96B5E /* MST++.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* MST++.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* MST++.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6C12FA1311399DE30007DF88 /* Edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Edge.h; sourceTree = "<group>"; };
+		6C12FA1411399DE30007DF88 /* Edge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Edge.cpp; sourceTree = "<group>"; };
+		6C68292E113B0D6D008DA298 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
+		6C68292F113B0D6D008DA298 /* Heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Heap.cpp; sourceTree = "<group>"; };
+		6C9FEFB311379DD4004675BA /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		6C9FEFB411379DD4004675BA /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		6C9FEFB811379DE8004675BA /* DisjointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisjointSet.h; sourceTree = "<group>"; };
+		6C9FEFB911379DE8004675BA /* DisjointSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisjointSet.cpp; sourceTree = "<group>"; };
+		6C9FEFBD11379DF3004675BA /* DisjointSetCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisjointSetCollection.h; sourceTree = "<group>"; };
+		6C9FEFBE11379DF3004675BA /* DisjointSetCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisjointSetCollection.cpp; sourceTree = "<group>"; };
+		6CA46F081134F24000A95229 /* point3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point3d.h; sourceTree = "<group>"; };
+		6CA46F091134F24A00A95229 /* point3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point3d.cpp; sourceTree = "<group>"; };
+		6CA46F401134F5A800A95229 /* point4d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point4d.cpp; sourceTree = "<group>"; };
+		6CA46F421134F5B100A95229 /* point4d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point4d.h; sourceTree = "<group>"; };
+		6CA470AE11350A3900A95229 /* simplegraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simplegraph.h; sourceTree = "<group>"; };
+		6CA470AF11350A3900A95229 /* simplegraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simplegraph.cpp; sourceTree = "<group>"; };
+		6CD592C21134C2D5003F8ECC /* polygraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polygraph.h; sourceTree = "<group>"; };
+		6CD592C31134C2D5003F8ECC /* quickmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quickmath.h; sourceTree = "<group>"; };
+		6CD592C41134C2D5003F8ECC /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		6CD592C51134C2D5003F8ECC /* polygraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polygraph.cpp; sourceTree = "<group>"; };
+		6CD592C61134C2D5003F8ECC /* quickmath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quickmath.cpp; sourceTree = "<group>"; };
+		6CD592C71134C2D5003F8ECC /* point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* MST++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MST++"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* MST++.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "MST++.1"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* MST++ */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = "MST++";
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6C68292E113B0D6D008DA298 /* Heap.h */,
+				6C68292F113B0D6D008DA298 /* Heap.cpp */,
+				6CD592CE1134C2DD003F8ECC /* Headers */,
+				6CD592CF1134C2E3003F8ECC /* Implementation */,
+				08FB7796FE84155DC02AAC07 /* main.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* MST++ */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C9FEFC111379DFE004675BA /* Disjoint Set */ = {
+			isa = PBXGroup;
+			children = (
+				6C9FEFB311379DD4004675BA /* Node.h */,
+				6C9FEFB811379DE8004675BA /* DisjointSet.h */,
+				6C9FEFBD11379DF3004675BA /* DisjointSetCollection.h */,
+			);
+			name = "Disjoint Set";
+			sourceTree = "<group>";
+		};
+		6C9FEFC211379E1D004675BA /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				6C12FA1311399DE30007DF88 /* Edge.h */,
+				6CD592C21134C2D5003F8ECC /* polygraph.h */,
+				6CA470AE11350A3900A95229 /* simplegraph.h */,
+			);
+			name = Graphs;
+			sourceTree = "<group>";
+		};
+		6C9FEFC311379E2A004675BA /* Points */ = {
+			isa = PBXGroup;
+			children = (
+				6CD592C41134C2D5003F8ECC /* point.h */,
+				6CA46F081134F24000A95229 /* point3d.h */,
+				6CA46F421134F5B100A95229 /* point4d.h */,
+			);
+			name = Points;
+			sourceTree = "<group>";
+		};
+		6C9FEFC411379E3D004675BA /* Points */ = {
+			isa = PBXGroup;
+			children = (
+				6CD592C61134C2D5003F8ECC /* quickmath.cpp */,
+				6CD592C71134C2D5003F8ECC /* point.cpp */,
+				6CA46F091134F24A00A95229 /* point3d.cpp */,
+				6CA46F401134F5A800A95229 /* point4d.cpp */,
+			);
+			name = Points;
+			sourceTree = "<group>";
+		};
+		6C9FEFC511379E41004675BA /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				6C12FA1411399DE30007DF88 /* Edge.cpp */,
+				6CD592C51134C2D5003F8ECC /* polygraph.cpp */,
+				6CA470AF11350A3900A95229 /* simplegraph.cpp */,
+			);
+			name = Graphs;
+			sourceTree = "<group>";
+		};
+		6C9FEFC611379E48004675BA /* Disjoint Set */ = {
+			isa = PBXGroup;
+			children = (
+				6C9FEFB411379DD4004675BA /* Node.cpp */,
+				6C9FEFB911379DE8004675BA /* DisjointSet.cpp */,
+				6C9FEFBE11379DF3004675BA /* DisjointSetCollection.cpp */,
+			);
+			name = "Disjoint Set";
+			sourceTree = "<group>";
+		};
+		6CD592CE1134C2DD003F8ECC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6CD592C31134C2D5003F8ECC /* quickmath.h */,
+				6C9FEFC311379E2A004675BA /* Points */,
+				6C9FEFC211379E1D004675BA /* Graphs */,
+				6C9FEFC111379DFE004675BA /* Disjoint Set */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		6CD592CF1134C2E3003F8ECC /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				6C9FEFC411379E3D004675BA /* Points */,
+				6C9FEFC511379E41004675BA /* Graphs */,
+				6C9FEFC611379E48004675BA /* Disjoint Set */,
+			);
+			name = Implementation;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* MST++.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* MST++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "MST++" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MST++";
+			productInstallPath = "$(HOME)/bin";
+			productName = "MST++";
+			productReference = 8DD76F6C0486A84900D96B5E /* MST++ */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "MST++" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* MST++ */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* MST++ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
+				6CD592C81134C2D5003F8ECC /* polygraph.cpp in Sources */,
+				6CD592C91134C2D5003F8ECC /* quickmath.cpp in Sources */,
+				6CD592CA1134C2D5003F8ECC /* point.cpp in Sources */,
+				6CA46F0A1134F24A00A95229 /* point3d.cpp in Sources */,
+				6CA46F411134F5A800A95229 /* point4d.cpp in Sources */,
+				6CA470B011350A3900A95229 /* simplegraph.cpp in Sources */,
+				6C9FEFB511379DD4004675BA /* Node.cpp in Sources */,
+				6C9FEFBA11379DE8004675BA /* DisjointSet.cpp in Sources */,
+				6C9FEFBF11379DF3004675BA /* DisjointSetCollection.cpp in Sources */,
+				6C12FA1511399DE30007DF88 /* Edge.cpp in Sources */,
+				6C682930113B0D6D008DA298 /* Heap.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_GLIBCXX_DEBUG=1",
+					"_GLIBCXX_DEBUG_PEDANTIC=1",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "MST++";
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "MST++";
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "MST++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "MST++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,8 +1,8 @@
 // Point4D Class
 // Description: 4 dimensional point
 
-#include "point3d.h"
-#include "quickmath.h"
+#include "Point3D.h"
+#include "QuickMath.h"
 #include <iostream>
 #include <cstdlib>
 

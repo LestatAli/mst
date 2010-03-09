@@ -1,22 +1,22 @@
-#include "point.h"
+#include "Node.h"
 #include <iostream>
 
-#pragma once;
+#pragma once
 
 class Edge
 {
 private:
-	Point *u; 
-	Point *v;
+	Node *u; 
+	Node *v;
 	float my_weight;
 	
 public:
 	Edge();
-	Edge(Point *, Point *, float);
-	Edge(Point *, Point *);
+	Edge(Node *, Node *, float);
+	Edge(Node *, Node *);
 	float getWeight() const;
-	Point * getOriginVertex() const;
-	Point * getEndVertex() const;
+	Node * getOriginNode() const;
+	Node * getEndNode() const;
 	void print() const;
 	bool operator > (Edge);
 };

@@ -1,6 +1,6 @@
 // Implementation of Point3D class
 
-#include "point3d.h"
+#include "Point3D.h"
 
 using namespace std;
 

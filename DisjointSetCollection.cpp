@@ -29,13 +29,29 @@ void DisjointSetCollection::link(int set_x_addr, int set_y_addr)
 	// get the disjoint sets at the provided addresses
 	DisjointSet *set_x = my_sets[set_x_addr];
 	DisjointSet *set_y = my_sets[set_y_addr];
+	Node *set_x_root = set_x->getRoot();
+	Node *set_y_root = set_y->getRoot();
+	int x_rank = set_x_root->getRank();
+	int y_rank = set_y_root->getRank();
 	
 	// hook up the set x to the root of set y
-	set_x->getRoot()->setParent(set_y->getRoot());
-	set_y->getRoot()->addChild(set_x->getRoot());
-	
-	// we no longer need the disjoint set x
-	my_sets.erase(my_sets.begin() + set_x_addr);
+	// order is decided based on rank
+	if (x_rank == y_rank || x_rank < y_rank)
+	{
+		set_x_root->setParent(set_y_root);
+		set_y_root->addChild(set_x_root);
+		set_y_root->setRank(y_rank++);
+		
+		// we no longer need the disjoint set x
+		my_sets.erase(my_sets.begin() + set_x_addr);
+	}
+	else
+	{
+		set_y_root->setParent(set_x_root);
+		set_x_root->addChild(set_y_root);
+		set_x_root->setRank(x_rank++);
+		my_sets.erase(my_sets.begin() + set_y_addr);
+	}
 }
 
 void DisjointSetCollection::unite(Node *node_x, Node *node_y)

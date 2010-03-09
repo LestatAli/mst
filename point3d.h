@@ -1,8 +1,8 @@
 // Point3D Class
 // Description:
 
-#include "point.h"
-#include "quickmath.h"
+#include "Point.h"
+#include "QuickMath.h"
 #include <iostream>
 #include <cstdlib>
 

@@ -4,23 +4,23 @@ using namespace std;
 
 Edge::Edge()
 {
-	u = new Point();
-	v = new Point();
-	my_weight = u->getDistanceTo(v);
+	u = new Node();
+	v = new Node();
+	my_weight = u->getVertex()->getDistanceTo(v->getVertex());
 }
 
-Edge::Edge(Point *u, Point *v, float weight)
+Edge::Edge(Node *u, Node *v, float weight)
 {
 	this->u = u;
 	this->v = v;
 	my_weight = weight;
 }
 
-Edge::Edge(Point *u, Point *v)
+Edge::Edge(Node *u, Node *v)
 {
 	this->u = u;
 	this->v = v;
-	my_weight = u->getDistanceTo(v);
+	my_weight = u->getVertex()->getDistanceTo(v->getVertex());
 }
 
 
@@ -29,26 +29,21 @@ float Edge::getWeight() const
 	return my_weight;
 }
 
-Point * Edge::getOriginVertex() const
+Node * Edge::getOriginNode() const
 {
 	return u;
 }
 
-Point * Edge::getEndVertex() const
+Node * Edge::getEndNode() const
 {
 	return v;
 }
 
-bool Edge::operator > (Edge e2)
-{
-	return (my_weight > e2.getWeight());
-}
-
 void Edge::print() const
 {
-	cout << "Edge: [u = ";
-	u->print();
-	cout<< ", v = ";
-	v->print();
+	cout << "Edge: [u = " << u;
+	//u->print();
+	cout<< ", v = " << v;
+	//v->print();
 	cout<< ", weight = " << my_weight << "]" <<endl;
 }

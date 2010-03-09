@@ -6,9 +6,9 @@ EdgeHeap::EdgeHeap()
 	my_list.reserve(1);
 }
 
-EdgeHeap::EdgeHeap(vector<Edge *> some_list)
+EdgeHeap::EdgeHeap(vector<Edge *> &some_list)
 {
-	my_list = some_list;
+	my_list.swap(some_list);
 	buildHeap();
 }
 
@@ -90,7 +90,7 @@ void EdgeHeap::print() const
 	int whereiam = 0;
 	
 	// Tree-style print
-	for (int i = 0; i <= ceil(log(my_list.size())); i++)
+	/*for (int i = 0; i <= ceil(log(my_list.size())); i++)
 	{
 		for (int j = 0; j < ceil(pow((double) 2, i)); j ++)
 		{
@@ -104,12 +104,10 @@ void EdgeHeap::print() const
 		}
 		
 		cout<<endl;
-	}
+	}*/
 	 
-	/*// Array print
-	 cout<< "[ " ;
+	// Array print
 	for (int i= 0; i < my_list.size(); i++)
-		cout<< my_list[i]->getWeight() << ", ";
-	cout<<"]" <<endl;*/
+		my_list[i]->print();
 }
 	

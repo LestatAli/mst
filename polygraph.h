@@ -1,19 +1,19 @@
 #include <string>
 #include <cstdlib>
-#include "point4d.h"
+#include "Point4D.h"
 #include "Edge.h"
 #include "Heap.h"
 #include "DisjointSet.h"
 #include <vector>
 
-#pragma once;
+#pragma once
 
 using namespace std; 
 
 class PolyGraph
 {
 private:
-	Point **vertices;
+	vector<Node *> my_nodes;
 	EdgeHeap *my_edges;
 	int size;
 	short dim;

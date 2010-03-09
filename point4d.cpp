@@ -1,6 +1,6 @@
 // Implementation of Point4D class
 
-#include "point4d.h"
+#include "Point4D.h"
 
 using namespace std;
 

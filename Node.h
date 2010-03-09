@@ -1,6 +1,6 @@
 #include <cstdlib>
 #include <vector>
-#include "point.h"
+#include "Point.h"
 
 #pragma once
 
@@ -12,6 +12,7 @@ private:
 	Point *my_vertex;
 	Node *my_parent;
 	vector<Node *> my_children;
+	int my_rank;
 	
 public:
 	Node();
@@ -23,6 +24,8 @@ public:
 	Node * getParent() const;
 	vector<Node *> getChildren() const;
 	void setParent(Node *);
+	int getRank() const;
+	void setRank(int);
 	void addChild(Node *);
 	void print() const;
 };

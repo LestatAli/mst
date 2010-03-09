@@ -1,5 +1,5 @@
-// quickmath.h: useful math functions
-#include "quickmath.h"
+// QuickMath.h: useful math functions
+#include "QuickMath.h"
 
 float square(float x)
 {

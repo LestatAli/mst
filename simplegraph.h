@@ -1,5 +1,5 @@
 #include <iostream>
-#include "quickmath.h"
+#include "QuickMath.h"
 
 #pragma once;
 

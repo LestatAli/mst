@@ -13,7 +13,7 @@ private:
 	
 public:
 	EdgeHeap();
-	EdgeHeap(vector<Edge *> some_list);
+	EdgeHeap(vector<Edge *> &some_list);
 	int getParent(int i);
 	int getRight(int i);
 	int getLeft(int i);

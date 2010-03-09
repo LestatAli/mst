@@ -54,8 +54,8 @@
 		6CA470AE11350A3900A95229 /* simplegraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simplegraph.h; sourceTree = "<group>"; };
 		6CA470AF11350A3900A95229 /* simplegraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simplegraph.cpp; sourceTree = "<group>"; };
 		6CD592C21134C2D5003F8ECC /* polygraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polygraph.h; sourceTree = "<group>"; };
-		6CD592C31134C2D5003F8ECC /* quickmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quickmath.h; sourceTree = "<group>"; };
-		6CD592C41134C2D5003F8ECC /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		6CD592C31134C2D5003F8ECC /* QuickMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickMath.h; sourceTree = "<group>"; };
+		6CD592C41134C2D5003F8ECC /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
 		6CD592C51134C2D5003F8ECC /* polygraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polygraph.cpp; sourceTree = "<group>"; };
 		6CD592C61134C2D5003F8ECC /* quickmath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quickmath.cpp; sourceTree = "<group>"; };
 		6CD592C71134C2D5003F8ECC /* point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
@@ -87,8 +87,6 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6C68292E113B0D6D008DA298 /* Heap.h */,
-				6C68292F113B0D6D008DA298 /* Heap.cpp */,
 				6CD592CE1134C2DD003F8ECC /* Headers */,
 				6CD592CF1134C2E3003F8ECC /* Implementation */,
 				08FB7796FE84155DC02AAC07 /* main.cpp */,
@@ -127,7 +125,7 @@
 		6C9FEFC311379E2A004675BA /* Points */ = {
 			isa = PBXGroup;
 			children = (
-				6CD592C41134C2D5003F8ECC /* point.h */,
+				6CD592C41134C2D5003F8ECC /* Point.h */,
 				6CA46F081134F24000A95229 /* point3d.h */,
 				6CA46F421134F5B100A95229 /* point4d.h */,
 			);
@@ -137,7 +135,6 @@
 		6C9FEFC411379E3D004675BA /* Points */ = {
 			isa = PBXGroup;
 			children = (
-				6CD592C61134C2D5003F8ECC /* quickmath.cpp */,
 				6CD592C71134C2D5003F8ECC /* point.cpp */,
 				6CA46F091134F24A00A95229 /* point3d.cpp */,
 				6CA46F401134F5A800A95229 /* point4d.cpp */,
@@ -168,7 +165,8 @@
 		6CD592CE1134C2DD003F8ECC /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				6CD592C31134C2D5003F8ECC /* quickmath.h */,
+				6C68292E113B0D6D008DA298 /* Heap.h */,
+				6CD592C31134C2D5003F8ECC /* QuickMath.h */,
 				6C9FEFC311379E2A004675BA /* Points */,
 				6C9FEFC211379E1D004675BA /* Graphs */,
 				6C9FEFC111379DFE004675BA /* Disjoint Set */,
@@ -179,6 +177,8 @@
 		6CD592CF1134C2E3003F8ECC /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				6C68292F113B0D6D008DA298 /* Heap.cpp */,
+				6CD592C61134C2D5003F8ECC /* quickmath.cpp */,
 				6C9FEFC411379E3D004675BA /* Points */,
 				6C9FEFC511379E41004675BA /* Graphs */,
 				6C9FEFC611379E48004675BA /* Disjoint Set */,

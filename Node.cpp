@@ -1,4 +1,4 @@
-#include "node.h"
+#include "Node.h"
 #include <iostream>
 
 Node::Node()
@@ -6,6 +6,7 @@ Node::Node()
 	my_vertex = new Point();
 	my_parent = NULL;
 	my_children.reserve(1);
+	my_rank = 0;
 }
 
 Node::Node(Point *vertex, Node *parent)
@@ -13,6 +14,7 @@ Node::Node(Point *vertex, Node *parent)
 	my_vertex = vertex;
 	my_parent = parent;
 	my_children.reserve(1);
+	my_rank = 0;
 }
 
 Node::Node(Point *vertex)
@@ -20,6 +22,7 @@ Node::Node(Point *vertex)
 	my_vertex = vertex;
 	my_parent = NULL;
 	my_children.reserve(1);
+	my_rank = 0;
 }
 
 Point * Node::getVertex() const
@@ -35,6 +38,16 @@ Node * Node::getParent() const
 void Node::setParent(Node *new_parent) 
 {
 	my_parent = new_parent;
+}
+
+int Node::getRank() const
+{
+	return my_rank;
+}
+
+void Node::setRank(int new_rank)
+{
+	my_rank = new_rank;
 }
 
 vector<Node *> Node::getChildren() const

@@ -2,8 +2,8 @@
 
 #include <iostream>
 #include <cstdlib>
-#include "point.h"
-#include "quickmath.h"
+#include "Point.h"
+#include "QuickMath.h"
 
 using namespace std;
 

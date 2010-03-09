@@ -25,7 +25,7 @@ Node *DisjointSet::getRoot() const
 
 bool DisjointSet::isMember(Node *target_node)
 {
-	// prepare stack for a DFS
+	/*// prepare stack for a DFS
 	vector<Node *> dfs_stack;
 	dfs_stack.push_back(my_root);
 	while (!dfs_stack.empty())
@@ -33,15 +33,41 @@ bool DisjointSet::isMember(Node *target_node)
 		Node *current_node = dfs_stack.back();
 		dfs_stack.pop_back();
 		
-		if (current_node == target_node)
+		if (current_node->getVertex() == target_node->getVertex())
+		{
+			//path compression
+			current_node->setParent(my_root);
 			return true;
-		
+		}
 		// stack in the children
 		vector<Node *> children = current_node->getChildren();
 		for (int i = 0; i < children.size(); i++)
 			dfs_stack.push_back(children[i]);
 	}
-	return false;
+	
+	return false;*/
+	
+	Node *current_node = target_node;
+	while (current_node->getParent() != NULL)
+		current_node = current_node->getParent();
+	
+	if (current_node == my_root)
+	{
+		if (target_node != my_root)
+		{
+			target_node->setParent(my_root);
+			my_root->addChild(target_node);
+		}
+		return true;
+	}
+	else
+		return false;
+	
+	/*else
+	{
+		isMember(target_node->getParent());
+	}*/
+	
 }
 
 
